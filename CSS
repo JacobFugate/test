@@ -1,0 +1,40 @@
+/* Style each milestone separately */
+.milestone1 {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.milestone2 {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.milestone3 {
+    background-color: lightyellow;
+    color: darkgoldenrod;
+}
+
+.milestone4 {
+    background-color: lightpink;
+    color: darkred;
+}
+
+.milestone5 {
+    background-color: lightcyan;
+    color: darkblue;
+}
+
+/* Target all h1 tags and h2 tags and make them the same color */
+h1, h2 {
+    color: navy;
+}
+
+/* Define styles for table */
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
