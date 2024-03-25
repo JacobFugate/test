@@ -1,40 +1,87 @@
-/* Style each milestone separately */
-.milestone1 {
-    background-color: lightblue;
-    color: darkblue;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
-.milestone2 {
-    background-color: lightgreen;
-    color: darkgreen;
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: red;
+    font-family: Fantasy;
 }
 
-.milestone3 {
-    background-color: lightyellow;
-    color: darkgoldenrod;
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.milestone4 {
-    background-color: lightpink;
-    color: darkred;
+.milestone-text {
+    cursor: pointer;
+    animation: colorChange 1s ease-in-out infinite alternate;
 }
 
-.milestone5 {
-    background-color: lightcyan;
-    color: darkblue;
+@keyframes colorChange {
+    from {
+        color: red;
+    }
+    to {
+        color: skyblue;
+    }
 }
 
-/* Target all h1 tags and h2 tags and make them the same color */
-h1, h2 {
-    color: navy;
+/* Main Styles */
+.main {
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* Define styles for table */
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Table Styles */
 table {
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 30px;
 }
 
 th, td {
-    border: 2px solid black;
-    padding: 8px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    right: -130%; /* Adjust as needed */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
